@@ -1,1 +1,8 @@
 rootProject.name = 'Skeleton'
+
+include 'user-management-service'
+include 'auth-service'
+include 'front-end'
+include 'user-service'
+include 'front-end-service'
+

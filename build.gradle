@@ -28,6 +28,10 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
-tasks.named('test') {
-	useJUnitPlatform()
+bootRun {
+	systemProperty 'spring.profiles.active', 'dev'
+}
+
+wrapper {
+	gradleVersion = '8.0'
 }
